@@ -1,0 +1,8 @@
+heavy_rain_by_month = heavy_rain_df.groupby(df['date'].dt.month).size()  # Count occurrences per month (across all years)
+plt.figure(figsize=(8, 5))
+heavy_rain_by_month.plot(kind='bar', color='darkred', alpha=0.7)
+plt.xlabel("Month")
+plt.ylabel("Number of Heavy Rain Days")
+plt.title("Heavy Rain Occurrences by Month")
+plt.xticks(range(1, 13), ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
+plt.show()

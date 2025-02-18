@@ -16,6 +16,7 @@ def load_data():
     return df
 
 df = load_data()
+df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')  # Convert date column to datetime
 st.title("🌦 London Weather Dashboard")
 st.write("This dashboard analyzes and visualizes London weather data.")
 

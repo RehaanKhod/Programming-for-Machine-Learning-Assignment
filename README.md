@@ -1,3 +1,4 @@
+# London Weather analysis
 Climate Insights Ltd. is working to improve weather-related predictions and
 analysis in London, UK. The company aims to provide better insights for local
 businesses, especially those dependent on weather conditions. To achieve
@@ -20,22 +21,18 @@ outcomes based on the data. Justify your choice.
 8. Identify a suitable performance metric for this problem and explain your
 reasoning.
 
-# London Weather analysis
-----
+
 ## Overview
-----
 The London Weather Analysis Assignment is designed to predict weather types based on pre-recorded weather data values. This assignment utilized a machine learnign model to classify the weather into its correct categories.
 
 
 ## Features
-----
 - Input Parameters: This code uses a variety of weather-related data such as Date, Precipitation, Maximum Temperature, Minimum Temperature, and Wind Speed.
 - Prediction: Based on the input features, the machine learning model classifies the weather into its own category, for instance: Sunny, Heavy Rain, Snow, Light Rain, Fog.
 
 - Data Exploration: The dataset includes outliers and a range of values.
 
 ## Technologies Used
-----
 -	Backend: Python.
 -	Data Handling: pandas, numpy.
 -	Data Visualization: seaborn, matplotlib.

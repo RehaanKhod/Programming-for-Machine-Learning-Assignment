@@ -20,3 +20,4 @@ st.title("🌦 London Weather Dashboard")
 st.write("This dashboard analyzes and visualizes London weather data.")
 
 print(df.columns)
+print(df.head())

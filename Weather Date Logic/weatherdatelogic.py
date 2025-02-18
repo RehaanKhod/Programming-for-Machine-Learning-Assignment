@@ -10,11 +10,10 @@ from sklearn.preprocessing import LabelEncoder
 from google.colab import files
 uploaded = files.upload()
 df = pd.read_csv('London_Weather.csv')
-# ==========================
-# 🔹 DATA CLEANING & PREPROCESSING
-# ==========================
 
 
+
+#DATA CLEANING & PREPROCESSING
 # Handle missing values
 df['temp_max'].fillna(df['temp_max'].mean(), inplace=True)
 df['wind'].fillna(df['wind'].mean(), inplace=True)
@@ -37,14 +36,10 @@ if df.loc[heavy_rain_condition & (df["precipitation"] == 0), "precipitation"].co
 df_numeric = df.select_dtypes(include=['number'])
 
 
-# ==========================
-# 🔹 EXPLORATORY DATA ANALYSIS (EDA) & VISUALIZATIONS
-# ==========================
 
+#EXPLORATORY DATA ANALYSIS (EDA) & VISUALIZATIONS
 # Display first few rows of the dataset
 #print(df.head(9))
-
-
 
 # Encode categorical 'weather' variable into numerical labels
 le = LabelEncoder()
@@ -93,11 +88,9 @@ for weather in weather_types:
         color = 'gold'
         title = "Sunny days by month"
         
-# ==========================
-# 🔹 example of plotting a graph by month and condition "sun"
-# 🔹 any graph can be plotted withing the if statements and larger for statements to match both cases
-# ==========================
 
+#example of plotting a graph by month and condition "sun"
+#any graph can be plotted withing the if statements and larger for statements to match both cases
         plt.figure(figsize=(8, 4))
         counts2.plot(kind='bar', color='gold', alpha=0.7)
         plt.title(title)

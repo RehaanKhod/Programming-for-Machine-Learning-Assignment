@@ -21,3 +21,4 @@ st.write("This dashboard analyzes and visualizes London weather data.")
 
 print(df.columns)
 print(df.head())
+st.write(df.head())

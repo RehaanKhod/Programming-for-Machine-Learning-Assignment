@@ -39,3 +39,10 @@ df.dropna(subset=["weather"], inplace=True)  # Only drop rows where 'weather' is
 df.drop_duplicates(inplace=True)
 
 st.success("✅ Data cleaned successfully!")
+
+
+st.subheader("Filter Data")
+weather_options = df["weather"].unique()
+selected_weather = st.selectbox("Select Weather Condition:", weather_options)
+filtered_df = df[df["weather"] == selected_weather]
+st.write(filtered_df)

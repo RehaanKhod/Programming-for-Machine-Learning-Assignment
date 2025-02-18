@@ -49,10 +49,10 @@ This assignment is provided with the weather data set that will be fed into the 
 
 
 
-Contributors:
+### Contributors:
 1. Rehaan Khodabocus
-2. Dhruv Kissoon
-3. Sana Gopee
+2. Sana Gopee
+3. Dhruv Kissoon
 4. Severine Hong Lin
 5. Bhevissha Harrah
 6. Vriddhi Ghoorun

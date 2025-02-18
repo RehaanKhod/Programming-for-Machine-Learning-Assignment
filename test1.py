@@ -58,3 +58,15 @@ ax.set_ylabel("Frequency")
 ax.set_title("Distribution of Wind Speed")
 st.pyplot(fig)
 
+st.subheader("📈 Temperature Trends")
+
+fig, ax = plt.subplots(figsize=(10, 5))
+df["date"] = pd.to_datetime(df["date"])  # Ensure date column is in datetime format
+df_sorted = df.sort_values("date")  # Sort by date
+ax.plot(df_sorted["date"], df_sorted["temp_max"], label="Max Temp (°C)", color="red")
+ax.plot(df_sorted["date"], df_sorted["temp_min"], label="Min Temp (°C)", color="blue")
+ax.set_xlabel("Date")
+ax.set_ylabel("Temperature (°C)")
+ax.set_title("Max and Min Temperatures Over Time")
+ax.legend()
+st.pyplot(fig)

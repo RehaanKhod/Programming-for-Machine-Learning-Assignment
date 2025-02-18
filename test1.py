@@ -22,3 +22,11 @@ st.write("This dashboard analyzes and visualizes London weather data.")
 print(df.columns)
 print(df.head())
 st.write(df.head())
+
+st.subheader("Dataset Overview")
+st.write(df.head())  # Displays the first few rows of the dataset
+
+# Show dataset statistics
+st.subheader("Dataset Statistics")
+st.write(df.describe())
+

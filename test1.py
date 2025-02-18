@@ -30,3 +30,12 @@ st.write(df.head())  # Displays the first few rows of the dataset
 st.subheader("Dataset Statistics")
 st.write(df.describe())
 
+# Handle missing values
+df["temp_max"].fillna(df["temp_max"].mean(), inplace=True)
+df["wind"].fillna(df["wind"].mean(), inplace=True)
+df.dropna(subset=["weather"], inplace=True)  # Only drop rows where 'weather' is missing
+
+# Remove duplicates
+df.drop_duplicates(inplace=True)
+
+st.success("✅ Data cleaned successfully!")

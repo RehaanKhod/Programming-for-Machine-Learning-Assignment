@@ -71,36 +71,5 @@ ax.set_title("Max and Min Temperatures Over Time")
 ax.legend()
 st.pyplot(fig)
 
-def plot_weather(selected_date):
-    """Function to display the weather visualization for a selected date."""
-    data = df[df['date'] == selected_date]
-    if data.empty:
-        st.write("No data available for this date.")
-        return
-    
-    weather = data['weather'].values[0]
-    tempmax = data['tempmax'].values[0]
-    tempmin = data['tempmin'].values[0]
-    wind = data['wind'].values[0]
-    precipitation = data['precipitation'].values[0]
-    
-    # Create a simple visualization
-    fig, ax = plt.subplots(figsize=(6, 4))
-    ax.set_title(f"Weather on {selected_date.strftime('%d %B %Y')}")
-    ax.bar(['Temp Max', 'Temp Min', 'Wind', 'Precipitation'], [tempmax, tempmin, wind, precipitation],
-           color=['red', 'blue', 'green', 'purple'])
-    ax.set_ylabel("Values")
-    
-    st.pyplot(fig)
-    st.write(f"### Weather Condition: {weather}")
 
-# Streamlit App Layout
-st.title("London Weather Visualization")
-
-# Date slider
-min_date = df['date'].min()
-max_date = df['date'].max()
-selected_date = st.slider("Select Date", min_value=min_date, max_value=max_date, value=min_date, format="%d/%m/%Y")
-
-plot_weather(selected_date)
 

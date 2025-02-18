@@ -48,15 +48,12 @@ filtered_df = df[df["weather"] == selected_weather]
 st.write(filtered_df)
 
 
-st.subheader("📈 Temperature Trends")
+st.subheader("💨 Wind Speed Distribution")
 
-fig, ax = plt.subplots(figsize=(10, 5))
-df["date"] = pd.to_datetime(df["date"])  # Ensure date column is in datetime format
-df_sorted = df.sort_values("date")  # Sort by date
-ax.plot(df_sorted["date"], df_sorted["tempmax"], label="Max Temp (°C)", color="red")
-ax.plot(df_sorted["date"], df_sorted["tempmin"], label="Min Temp (°C)", color="blue")
-ax.set_xlabel("Date")
-ax.set_ylabel("Temperature (°C)")
-ax.set_title("Max and Min Temperatures Over Time")
-ax.legend()
+fig, ax = plt.subplots(figsize=(8, 5))
+sns.histplot(df["wind"], bins=20, kde=True, ax=ax, color="green")
+ax.set_xlabel("Wind Speed (km/h)")
+ax.set_ylabel("Frequency")
+ax.set_title("Distribution of Wind Speed")
 st.pyplot(fig)
+

@@ -49,6 +49,7 @@ This assignment is provided with the weather data set that will be fed into the 
 # Screenshots
 /Users/rehaankhodabocus/Desktop/Programming-for-Machine-Learning-Assignment/Codes/PairPlot/PairPlot.png
 
+![PairPlot](https://github.com/user-attachments/assets/dcdc19c4-31dd-4587-ab07-52f8685504ec)
 
 ### Contributors:
 1. Rehaan Khodabocus

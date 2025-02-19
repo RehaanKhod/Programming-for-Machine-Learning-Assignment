@@ -48,8 +48,8 @@ This assignment is provided with the weather data set that will be fed into the 
 
 # Screenshots
 
-<img width="500" alt="PairPlot Image" src = https://github.com/user-attachments/assets/d1705ab9-c98d-417e-bca6-365306775ffd> <img width="500" alt="Temperature Trends Image" src =  https://github.com/user-attachments/assets/219223dd-54e2-4842-8c98-3552ac2489ae>
-
+<img width="500" alt="PairPlot Image" src = https://github.com/user-attachments/assets/d1705ab9-c98d-417e-bca6-365306775ffd> 
+<img width="500" alt="Temperature Trends Image" src =  https://github.com/user-attachments/assets/219223dd-54e2-4842-8c98-3552ac2489ae>
 <img width="500" alt="Distribution Image" src = https://github.com/user-attachments/assets/33d94528-1cfc-4a4f-a371-5e5a8cb58808>
 
 

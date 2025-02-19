@@ -47,9 +47,8 @@ This assignment is provided with the weather data set that will be fed into the 
 -	weather: Categorical target variable for classification.
 
 # Screenshots
-/Users/rehaankhodabocus/Desktop/Programming-for-Machine-Learning-Assignment/Codes/PairPlot/PairPlot.png
 
-<img width="1440" alt="PairPlot Image" src = https://github.com/user-attachments/assets/d1705ab9-c98d-417e-bca6-365306775ffd>
+<img width="650" alt="PairPlot Image" src = https://github.com/user-attachments/assets/d1705ab9-c98d-417e-bca6-365306775ffd>
 
 
 ### Contributors:

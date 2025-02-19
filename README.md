@@ -46,7 +46,8 @@ This assignment is provided with the weather data set that will be fed into the 
 -	wind: Decimal values representing wind speed.
 -	weather: Categorical target variable for classification.
 
-
+# Screenshots
+/Users/rehaankhodabocus/Desktop/Programming-for-Machine-Learning-Assignment/Codes/PairPlot/PairPlot.png
 
 
 ### Contributors:

@@ -48,13 +48,19 @@ This assignment is provided with the weather data set that will be fed into the 
 
 ## How To Use
 Download and Install Git. Type this in your terminal: 
- ``git`` 
+ ``
+ git
+ `` 
 
 After that change your directory to the one preferred. For me it will be Desktop. 
- ``cd Desktop`` 
+ ``
+ cd Desktop
+ `` 
  
 Clone this repo to your Desktop. 
- ``git clone https://github.com/RehaanKhod/Programming-for-Machine-Learning-Assignment.git`` 
+ ``
+ git clone https://github.com/RehaanKhod/Programming-for-Machine-Learning-Assignment.git
+ `` 
 
 Please note as of now this repo is private and under construction. It will be release to public after completion.
 

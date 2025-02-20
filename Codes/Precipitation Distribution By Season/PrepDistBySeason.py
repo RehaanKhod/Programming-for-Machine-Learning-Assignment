@@ -1,0 +1,6 @@
+plt.figure(figsize=(10, 6))
+sns.boxplot(x=df["season"], y=df["precipitation"], palette="Blues")
+plt.xlabel("Season")
+plt.ylabel("Precipitation (mm)")
+plt.title("Precipitation Distribution by Season")
+plt.show()
